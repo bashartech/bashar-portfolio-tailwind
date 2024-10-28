@@ -1,51 +1,5 @@
 
-// export default function FooterPage() {
-//   return (
-//     <div id="footer" className="w-full min-h-screen bg-bgColor py-16 px-4">
-//       <div className="max-w-4xl mx-auto">
-//         <h2 className="text-main text-3xl sm:text-4xl font-bold text-center mb-12">
-//           Contact Me!
-//         </h2>
-//         <form className="space-y-6">
-//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-//             <input
-//               type="text"
-//               placeholder="Full Name"
-//               className="w-full bg-second text-text h-12 rounded-lg px-4"
-//             />
-//             <input
-//               type="email"
-//               placeholder="Email Address"
-//               className="w-full bg-second text-text h-12 rounded-lg px-4"
-//             />
-//             <input
-//               type="tel"
-//               placeholder="Mobile Number"
-//               className="w-full bg-second text-text h-12 rounded-lg px-4"
-//             />
-//             <input
-//               type="text"
-//               placeholder="Email Subject"
-//               className="w-full bg-second text-text h-12 rounded-lg px-4"
-//             />
-//           </div>
-//           <textarea
-//             placeholder="Your Message"
-//             className="w-full bg-second text-text rounded-lg p-4 h-48 resize-none"
-//           ></textarea>
-//           <div className="flex justify-center">
-//             <button
-//               type="submit"
-//               className="px-8 py-3 bg-main text-bgColor rounded-full hover:bg-opacity-80 transition-colors duration-300 text-lg font-semibold"
-//             >
-//               Send Message
-//             </button>
-//           </div>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
+
 export default function FooterPage() {
   return (
     <div id="footer" className="w-full min-h-screen bg-bgColor bg-gradient-to-b from-bgColor to-second py-16 px-4 overflow-hidden">
