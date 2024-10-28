@@ -14,10 +14,10 @@ export default function About() {
       <div className="box w-full flex justify-center ">
 
       <div className="para text-lg p-2 w-[80%] text-text">
-        <p>I am a passionate and skilled creative professional with a robust background in front-end web development, specializing in crafting exceptional user experiences through coding and design. My expertise lies in HTML, CSS, JavaScript, and TypeScript, alongside advanced frameworks like Next.js, Tailwind CSS, ShadCN UI, and Radix UI. This strong coding foundation enables me to build dynamic, visually appealing, and highly functional websites that not only meet technical requirements but also prioritize performance and usability.
+        <p>I am a passionate and skilled creative professional with a robust background in front end web development specializing in crafting exceptional user experiences through coding and design. My expertise lies in HTML CSS JavaScript and TypeScript alongside advanced frameworks like Next.js Tailwind CSS ShadCN UI and Radix UI. This strong coding foundation enables me to build dynamic visually appealing and highly functional websites that not only meet technical requirements but also prioritize performance and usability.
         <br />
         <br />
-        My way to deal with web improvement accentuates perfect, viable code and responsive plan, guaranteeing that each undertaking adjusts flawlessly across gadgets and stages. I'm focused on involving best practices in coding, permitting me to convey proficient and versatile arrangements that upgrade client commitment and fulfillment.
+        My way to deal with web improvement accentuates perfect, viable code and responsive plan, guaranteeing that each undertaking adjusts flawlessly across gadgets and stages. Im focused on involving best practices in coding, permitting me to convey proficient and versatile arrangements that upgrade client commitment and fulfillment.
 
 
         <br />
