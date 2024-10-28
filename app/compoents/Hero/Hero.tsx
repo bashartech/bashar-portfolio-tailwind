@@ -192,7 +192,7 @@ export default function Hero() {
           <div className="text w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center animate-fadeIn">
             <div className="content w-full max-w-lg">
               <h3 className="text-text text-2xl sm:text-3xl font-bold mb-2 animate-slideInLeft">
-                Hello, It's Me
+              Hello, It&apos;s Me
               </h3>
               <h1 className="text-text text-4xl sm:text-5xl font-bold mb-2 animate-slideInLeft animation-delay-300">M.Bashar</h1>
               <h3 className="text-text text-2xl sm:text-3xl font-bold mb-4 animate-slideInLeft animation-delay-600">
