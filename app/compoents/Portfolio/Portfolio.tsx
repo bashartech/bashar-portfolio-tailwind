@@ -1,17 +1,18 @@
+import Image from 'next/image';
 
 export default function PortfolioPage() {
   const projects = [
-    { image: 'bashar-motors.PNG', link: 'https://bashar-motors.vercel.app/',h4: "Bashar Motors",p:"A professional car purchase website featuring top-tier vehicles, expertly crafted using Next.js, React, CSS, and TypeScript for a seamless browsing and buying experience." },
+    { Image: 'bashar-motors.PNG', link: 'https://bashar-motors.vercel.app/',h4: "Bashar Motors",p:"A professional car purchase website featuring top-tier vehicles, expertly crafted using Next.js, React, CSS, and TypeScript for a seamless browsing and buying experience." },
 
-    { image: 'image-generator.PNG', link: 'https://ai-image-developer-by-bashar.netlify.app/', h4: "Ai Image Generator", p: "An advanced AI image generator website, meticulously crafted with JavaScript, delivering high-quality, dynamic visuals through seamless and intuitive user interactions. " },
+    { Image: 'image-generator.PNG', link: 'https://ai-image-developer-by-bashar.netlify.app/', h4: "Ai Image Generator", p: "An advanced AI image generator website, meticulously crafted with JavaScript, delivering high-quality, dynamic visuals through seamless and intuitive user interactions. " },
 
-    { image: 'clone-pic.PNG', link: 'https://bashars-clone.vercel.app/', h4: "Netflix Search Bar", p: "A sophisticated Movie Search Netflix Clone, developed with JavaScript, enabling users to effortlessly find and view detailed information on any movie." },
+    { Image: 'clone-pic.PNG', link: 'https://bashars-clone.vercel.app/', h4: "Netflix Search Bar", p: "A sophisticated Movie Search Netflix Clone, developed with JavaScript, enabling users to effortlessly find and view detailed information on any movie." },
 
-    { image: 'hangman-game.PNG', link: 'https://hang-men-game.netlify.app', h4: "Hangman Game", p: "An interactive Hangman Game built with JavaScript, offering an engaging word-guessing experience through intuitive gameplay and dynamic features. " },
+    { Image: 'hangman-game.PNG', link: 'https://hang-men-game.netlify.app', h4: "Hangman Game", p: "An interactive Hangman Game built with JavaScript, offering an engaging word-guessing experience through intuitive gameplay and dynamic features. " },
 
-    { image: 'resume-builder.PNG', link: 'https://builder-your-resume.vercel.app/', h4: "Resume Builder", p: "A streamlined resume builder website developed with TypeScript, designed to simplify creating professional resumes with ease and efficiency. " },
+    { Image: 'resume-builder.PNG', link: 'https://builder-your-resume.vercel.app/', h4: "Resume Builder", p: "A streamlined resume builder website developed with TypeScript, designed to simplify creating professional resumes with ease and efficiency. " },
 
-    { image: 'tailwind-css.PNG', link: 'https://tailwind-css-app-ivory.vercel.app/?__vercel_draft=1', h4: " UI/UX Design Of Bashar Tech Website ", p: "A sleek UI/UX design for the Bashar Tech website, crafted with Next.js, React, and Tailwind CSS for a seamless user experience." },
+    { Image: 'tailwind-css.PNG', link: 'https://tailwind-css-app-ivory.vercel.app/?__vercel_draft=1', h4: " UI/UX Design Of Bashar Tech Website ", p: "A sleek UI/UX design for the Bashar Tech website, crafted with Next.js, React, and Tailwind CSS for a seamless user experience." },
   ];
 
   return (
@@ -24,8 +25,8 @@ export default function PortfolioPage() {
           {projects.map((project, index) => (
             <div key={index} className="bg-bgColor rounded-xl overflow-hidden group relative shadow-lg transform hover:scale-105 transition-all duration-300 animate-fadeIn  lg:h-56">
               <div className="aspect-w-16 h-full aspect-h-9">
-                <img
-                  src={`/images/${project.image}`}
+                <Image
+                  src={`/images/${project.Image}`}
                   alt={`Project ${index + 1}`}
                   className="w-full h-full object-fill "
                 />
