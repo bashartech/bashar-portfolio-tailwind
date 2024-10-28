@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 
 import Link from "next/link";
 
@@ -7,7 +7,13 @@ export default function AboutPage() {
     <div id="about" className="main flex items-center justify-center w-full min-h-screen bg-second  p-4 overflow-hidden">
       <div className="content flex flex-col lg:flex-row items-center justify-center lg:justify-around w-full h-full max-w-5xl">
         <div className="img w-full lg:w-[40%] flex justify-center mb-6 lg:mb-0 animate-fadeIn">
-          <img src="/images/img2.png" className="w-[250px] sm:w-[350px] lg:w-[400px] rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" alt="" />
+        <Image 
+  src="/images/img2.png" 
+  className="w-[250px] sm:w-[350px] lg:w-[400px] rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" 
+  alt="Description of the image" 
+  width={400} // Set the desired width here
+  height={400} // Set the desired height here
+/>
         </div>
         
         <div className="text w-full lg:w-[50%] flex items-center justify-center">
