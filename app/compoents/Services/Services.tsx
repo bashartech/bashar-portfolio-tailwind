@@ -1,4 +1,3 @@
-import styles from './services.module.css';
 import Link from "next/link"
 
 export default function ServicesPage() {

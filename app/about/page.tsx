@@ -1,6 +1,5 @@
 import Header from "../compoents/Header/Header";
 import Link from "next/link"
-import styles from './about.module.css';
 
 export default function About() {
   return (
