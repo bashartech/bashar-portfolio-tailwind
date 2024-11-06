@@ -1,4 +1,4 @@
-
+import styles from './services.module.css';
 import Link from "next/link"
 
 export default function ServicesPage() {
@@ -21,25 +21,35 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div id="services" className="w-full min-h-screen bg-bgColor  py-16 px-4 overflow-hidden">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-main text-3xl sm:text-4xl font-bold text-center mb-12 animate-slideInDown">
-          Our Services
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="services" className={styles.servicesSection}>
+      <div className={styles.container}>
+        <h2 className={styles.heading}>Our Services</h2>
+        <div className={styles.grid}>
           {services.map((service, index) => (
-            <div key={index} className="bg-second text-white p-6 rounded-xl hover:border-2 hover:border-main transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate-fadeIn" style={{animationDelay: `${index * 300}ms`}}>
-              <div className="mb-6 flex justify-center">
-                <i className={`bx ${service.icon} text-5xl text-main animate-bounce`}></i>
+            <div
+              key={index}
+              className={styles.serviceCard}
+              style={{ animationDelay: `${index * 300}ms` }}
+            >
+              <div className={styles.iconContainer}>
+                <i className={`bx ${service.icon} ${styles.icon}`}></i>
               </div>
+<<<<<<< HEAD
               <h3 className="text-xl font-bold text-center mb-4">{service.title}</h3>
               <p className="text-center mb-6">{service.description}</p>
               <div className="flex justify-center">
                 <Link href={"/services"}>
                   <button className="px-6 py-2  hover:shadow-main hover:shadow-md bg-main text-bgColor rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-110 ">
+=======
+              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <p className={styles.serviceDescription}>{service.description}</p>
+              <div className={styles.buttonContainer}>
+                <Link href="/services">
+                  <button className={styles.learnMoreButton}>
+>>>>>>> a9cef2e0210e9a036b212a7261201a5afab849fc
                     Learn More
                   </button>
-                </Link>  
+                </Link>
               </div>
             </div>
           ))}
