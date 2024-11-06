@@ -1,5 +1,4 @@
 
-import styles from './portfolio.module.css';
 
 export default function PortfolioPage() {
   const projects = [
@@ -17,29 +16,27 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <div id="portfolio" className={styles.portfolioSection}>
-      <div className={styles.container}>
-        <h2 className={styles.heading}>Latest Projects</h2>
-        <div className={styles.grid}>
+    <div id="portfolio" className="w-full min-h-screen bg-second py-8 sm:py-12 md:py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-main text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12 animate-slideInDown">
+          Latest Projects
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              className={styles.projectCard}
-              style={{ animationDelay: `${index * 300}ms` }}
-            >
-              <div className={styles.imageWrapper}>
+            <div key={index} className="bg-bgColor rounded-xl overflow-hidden group relative shadow-lg transform hover:scale-105 transition-all duration-300 animate-fadeIn h-64 sm:h-72 md:h-60 lg:h-64">
+              <div className="w-full h-full">
                 <img
                   src={`/images/${project.Image}`}
                   alt={`Project ${index + 1}`}
-                  className={styles.projectImage}
+                  className="w-full h-full object-fill"
                 />
               </div>
-              <div className={styles.overlay}>
-                <h4 className={styles.projectTitle}>{project.h4}</h4>
-                <p className={styles.projectDescription}>{project.p}</p>
+              <div className="absolute inset-0 w-full h-full bg-gray-900 bg-opacity-75 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h4 className="text-white text-lg sm:text-xl font-semibold mb-2 text-center">{project.h4}</h4>
+                <p className="text-white text-xs sm:text-sm text-center px-2 sm:px-4 mb-4 overflow-y-auto max-h-32 sm:max-h-40">{project.p}</p>
                 <a
                   href={project.link}
-                  className={styles.projectLink}
+                  className="text-white text-xl sm:text-2xl hover:text-main transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
