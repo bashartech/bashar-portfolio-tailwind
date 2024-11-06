@@ -85,7 +85,7 @@ export default function Header() {
                 Portfolio
               </li>
             </Link>
-            <Link href={"/home#contact"}>
+            <Link href={"/home#footer"}>
               <li
                 className="text-white hover:text-main cursor-pointer"
                 onClick={closeMenu}

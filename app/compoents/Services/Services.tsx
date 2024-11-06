@@ -35,7 +35,7 @@ export default function ServicesPage() {
               <h3 className="text-xl font-bold text-center mb-4">{service.title}</h3>
               <p className="text-center mb-6">{service.description}</p>
               <div className="flex justify-center">
-                <Link href="/services">
+                <Link href={"/services"}>
                   <button className="px-6 py-2  hover:shadow-main hover:shadow-md bg-main text-bgColor rounded-full hover:bg-opacity-80 transition-all duration-300 transform hover:scale-110 ">
                     Learn More
                   </button>
