@@ -2,9 +2,10 @@
 
 export default function PortfolioPage() {
   const projects = [
-    { Image: 'bashar-motors.PNG', link: 'https://bashar-motors.vercel.app/',h4: "Bashar Motors",p:"A professional car purchase website featuring top-tier vehicles, expertly crafted using Next.js, React, CSS, and TypeScript for a seamless browsing and buying experience." },
+    { Image: 'blog2.PNG', link: 'https://bashar-blogs.vercel.app/', h4: "Blogs Website", p: "The blog website allows users to easily browse and read various blog posts. Additionally, it provides an interactive commenting feature. " },
     
-    { Image: 'resume.PNG', link: 'https://bashar-resume.vercel.app/', h4: "Resume Builder", p: "A streamlined resume builder website developed with TypeScript, designed to simplify creating professional resumes with ease and efficiency. " },
+    { Image: 'bashar-motors.PNG', link: 'https://bashars-portfolio.vercel.app/',h4: "Bashar Motors",p:"A professional car purchase website featuring top-tier vehicles, expertly crafted using Next.js, React, CSS, and TypeScript for a seamless browsing and buying experience." },
+    
 
     { Image: 'image-generator.PNG', link: 'https://ai-image-developer-by-bashar.netlify.app/', h4: "Ai Image Generator", p: "An advanced AI image generator website, meticulously crafted with JavaScript, delivering high-quality, dynamic visuals through seamless and intuitive user interactions. " },
 
