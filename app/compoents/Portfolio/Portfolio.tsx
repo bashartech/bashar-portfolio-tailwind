@@ -2,11 +2,12 @@
 
 export default function PortfolioPage() {
   const projects = [
+    
+    { Image: 'homehack.PNG', link: 'https://marketplace-by-bashar.vercel.app/', h4: "E-Commerce Website", p: "A Full Stack E-Commerce Website built with Next.js, React, and Tailwind CSS. This website allows customers to purchase products based on their needs.." },
+    
     { Image: 'blog2.PNG', link: 'https://bashar-blogs.vercel.app/', h4: "Blogs Website", p: "The blog website allows users to easily browse and read various blog posts. Additionally, it provides an interactive commenting feature. " },
     
     { Image: 'bashar-motors.PNG', link: 'https://bashar-motors.vercel.app/',h4: "Bashar Motors",p:"A professional car purchase website featuring top-tier vehicles, expertly crafted using Next.js, React, CSS, and TypeScript for a seamless browsing and buying experience." },
-    
-    { Image: 'homehack.PNG', link: 'https://marketplace-by-bashar.vercel.app/', h4: "E-Commerce Website", p: "An E-Commerce Website built with Next.js, React, and Tailwind CSS. This website allows customers to purchase products based on their needs.." },
 
     { Image: 'bandage.PNG', link: 'https://hackhaton-2-virid.vercel.app/', h4: " UI/UX Design Of E-Commerce Website ", p: "An E-Commerce website for purchase clothes of mens and womens crafted with Next.js, React, and Tailwind CSS for a seamless user experience." },
 
