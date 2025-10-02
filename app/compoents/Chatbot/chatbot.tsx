@@ -55,8 +55,8 @@ export default function Chatbot() {
       const data: { reply: string } = await res.json()
       const botMsg: Message = { role: "assistant", content: data.reply || "" }
       setMessages((prev) => [...prev, botMsg])
-    } catch (err: any) {
-      setError(err?.message || "Something went wrong.")
+    } catch (err){
+      setError("Something went wrong.")
     } finally {
       setLoading(false)
     }
