@@ -11,7 +11,7 @@ app = FastAPI()
 # CORS: allow Next.js dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3001"],
+    allow_origins=["https://bashars-portfolio.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
