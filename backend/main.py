@@ -11,7 +11,9 @@ app = FastAPI()
 # CORS: allow Next.js dev server
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://bashars-portfolio.vercel.app/"],
+    allow_origins=[
+        "https://bashars-portfolio.vercel.app/"
+        ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -170,7 +172,6 @@ async def chat(req: ChatRequest):
             agent,
             req.message.strip(),
             run_config=RunConfig(model=gemini_model),
-            session=Session
         )
         reply = (result.final_output or "").strip()
         return ChatResponse(reply=reply)

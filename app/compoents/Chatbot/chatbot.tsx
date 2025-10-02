@@ -5,6 +5,8 @@ import React from "react"
 type Role = "user" | "assistant"
 type Message = { role: Role; content: string }
 
+const BACKEND_PATH = process.env.NEXT_PUBLIC_BACKEND_PATH ?? "http://127.0.0.1:8000/chat" ;
+
 export default function Chatbot() {
   const [messages, setMessages] = React.useState<Message[]>([])
   const [input, setInput] = React.useState("")
@@ -30,6 +32,7 @@ export default function Chatbot() {
     return () => window.removeEventListener("keydown", onKey)
   }, [])
 
+
   async function sendMessage(e: React.FormEvent) {
     e.preventDefault()
     if (!input.trim()) return
@@ -41,7 +44,7 @@ export default function Chatbot() {
     setError(null)
 
     try {
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch(BACKEND_PATH, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMsg.content }),
