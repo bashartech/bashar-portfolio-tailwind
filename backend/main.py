@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
-from agents import Agent, Runner, function_tool, ModelSettings
+from agents import Agent, Runner,Session function_tool, ModelSettings
 from agents.run import RunConfig
 from configure.config import gemini_model
 
@@ -170,6 +170,7 @@ async def chat(req: ChatRequest):
             agent,
             req.message.strip(),
             run_config=RunConfig(model=gemini_model),
+            session=Session
         )
         reply = (result.final_output or "").strip()
         return ChatResponse(reply=reply)
